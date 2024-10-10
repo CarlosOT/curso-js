@@ -17,13 +17,44 @@
     <h1>Iniciando estudos <span>DOM</span></h1>
     <p>Parágrafo <strong>posição [0] &nbsp;</strong></p>
     <p>Parágrafo <strong>posição [1] &nbsp;</strong></p>
-    <div>Clique Aqui</div><br>
+    <div>Clique Aqui Sem Id</div><br>
+    <div class="selectorAllClick0">Clique Aqui Com 'querySelectorAll [0]'</div><br>
+    <div class="selectorAllClick1">Clique Aqui Com 'querySelectorAll [1]'</div><br>
+    <div class="selectorAllClick2">Clique Aqui Com 'querySelectorAll [2]'</div><br>
+    <div class="selectorAllClick0">Clique Aqui Com 'querySelectorAll [3]'</div><br>
+    <div class="selectorAllClick1">Clique Aqui Com 'querySelectorAll [4]'</div><br>
+    <div class="selectorAllClick2">Clique Aqui Com 'querySelectorAll [5]'</div><br>
+    <div class="selectorAllClick0">Clique Aqui Com 'querySelectorAll [6]'</div><br>
+    <div class="selectorAllClick1">Clique Aqui Com 'querySelectorAll [7]'</div><br>
+    <div class="selectorAllClick2">Clique Aqui Com 'querySelectorAll [8]'</div><br>
+    <div id="idClick">Clique Aqui Com 'id'</div><br>
+    <div name="nameClick">Clique Aqui Com 'name'</div><br>
+    <div class="classClick">Clique Aqui Com 'class'</div><br>
     <hr><br>
 
-    <script type="text/javascript">
+    <script>
+        var divBodySelector = window.document.body.querySelectorAll('div.selectorAllClick0, div.selectorAllClick1, div.selectorAllClick2')[5]; //referência a 'id' usa '#' | para 'class' usa '.'
+        divBodySelector.style.background = 'black';
+        divBodySelector.style.color = 'white';
+
         var divBody = window.document.body.getElementsByTagName('div')[0];
         divBody.style.fontWeight = 'bold';
         divBody.style.background = 'white';
+
+        var divBodyId = window.document.getElementById('idClick');
+        divBodyId.style.fontStyle = 'italic';
+        divBodyId.style.background = 'pink';
+        //divBodyId.innerText = 'Alterei o texto dentro da "div" usando o innerText';
+
+        var divBodyName = window.document.getElementsByName('nameClick')[0];
+        divBodyName.style.color = 'white';
+        divBodyName.style.fontStyle = 'italic';
+        divBodyName.style.background = 'orange';
+        divBodyName.innerText = 'Alterei o texto dentro da "div" usando o innerText';
+
+        var divBodyClass = window.document.getElementsByClassName('classClick')[0];
+        divBodyClass.style.color = 'white';
+        divBodyClass.style.background = 'blue';
 
         var corpo = window.document.body;
         corpo.style.background = 'green';
