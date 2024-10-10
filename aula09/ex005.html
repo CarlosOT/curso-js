@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos DOM</title>
+    <style>
+        body{
+            background-color: rgb(255, 235, 206);
+            color: black;
+            font-size: 18pt;
+            font-family: arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos <span>DOM</span></h1>
+    <p>Parágrafo <strong>posição [0] &nbsp;</strong></p>
+    <p>Parágrafo <strong>posição [1] &nbsp;</strong></p>
+    <div>Clique Aqui</div><br>
+    <hr><br>
+
+    <script type="text/javascript">
+        var divBody = window.document.body.getElementsByTagName('div')[0];
+        divBody.style.fontWeight = 'bold';
+        divBody.style.background = 'white';
+
+        var corpo = window.document.body;
+        corpo.style.background = 'green';
+
+        var spanTitle = window.document.body.getElementsByTagName('span')[0];
+        spanTitle.style.color = 'yellow';
+
+        var p1 = window.document.getElementsByTagName('p')[1];
+        p1.style.color = 'yellow';
+
+        var linhaHorizontal = window.document.body.getElementsByTagName('hr')[0];
+        linhaHorizontal.style.borderColor = 'yellow';
+
+        window.document.write("<strong>Parágrafo (innerText): </strong>" + p1.innerText);
+        window.document.write('<strong>Parágrafo (innertHtml)</strong> ' + p1.innerHTML);
+
+    </script>
+</body>
+</html>
