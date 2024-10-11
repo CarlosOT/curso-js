@@ -12,8 +12,11 @@
             margin-top: 10px;
         }
         body{
+            text-align: center;
             font-family: arial;
             font-size: 20pt;
+            background-color: antiquewhite;
+            padding: 150px;
         }
         input{
             font-family: arial;
@@ -21,26 +24,53 @@
             border-radius: 10px;
             width: 100px;
         }
+        #estiloBtn{
+            background-color: green;
+            color: white;
+            box-shadow: 1px 1px 1px 1px black;
+        }
+        h1{
+            border-radius: 10px;
+            margin-left: 300px;
+            margin-right: 300px;
+        }
+
     </style>
 </head>
 <body>
     <h1>Somando Valores</h1>
-    <p>Neste exemplo estamos fazendo uma operação de soma:</p>
+    <p>Neste exemplo estamos fazendo uma operação de soma</p>
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Somar" id="estiloBtn" onclick="somar()">
     <div id="res">Resultado</div>
 
     <script>
+        /*------------------------------------------------------VARIÁVEIS E DEF.EVENTOS*/
+        var botaoSoma = document.getElementById('estiloBtn');
+        botaoSoma.addEventListener('mouseenter', passouMouse);
+        botaoSoma.addEventListener('mouseout', saiuMouse);
+
+        /*----------------------------------------------------------------------FUNÇÕES*/
+        //executa evento quando passa o mouse no botão
+        function passouMouse(){
+            botaoSoma.style.background = 'orange';
+        }    
+
+        //executa evento quando passa o mouse no botão
+        function saiuMouse(){
+            botaoSoma.style.background = 'green';
+        }    
+
+        //executa evento quando o botão de somar é clicado
         function somar(){
             var tn1 = window.document.getElementById('txtn1');
             var tn2 = window.document.querySelector('input#txtn2');
-            
             var n1 = Number(tn1.value);
             var n2 = Number.parseInt(tn2.value);
-
             var res = window.document.getElementById('res');
             var s = n1 + n2;
+
             res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`;
             res.style.color = 'blue';
             res.style.fontWeight = 400;
