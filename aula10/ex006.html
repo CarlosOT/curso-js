@@ -12,19 +12,70 @@
         font-size: 20pt;
         background-color: green;
         color: white;
-        width: 200px;   
-        height: 200px;
+        width: auto;   
+        height: 100px;
         border-radius: 5px;
+        margin-top: 50px;
         margin-bottom: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
         padding: 40px;
-        line-height: 200px;
+        line-height: 100px;
         text-align: center;
+    }
+    h1{
+        text-align: center;
+        font-size: 30pt;
+        font-family: arial;
     }
 </style>
 
 <body>
-    <div id="area">
-        Interaja ...
+    <h1>Eventos <span id="areaH1">DOM</span></h1>
+    
+    <div id="area" onclick="clicar()" onmouseout="sair()" onmouseenter="entrar()">
+        Sem Interação ...
     </div>
+
+    <script>
+        //variáveis e objetos
+        var areaId = document.getElementById('area');
+        var areaH1 = document.getElementById('areaH1');
+
+        //definindo eventos dentro do js
+        areaH1.addEventListener('mousemove', mover);
+        areaH1.addEventListener('mouseout'  , sair);
+
+        //funcões e métodos
+        function entrar(){          
+            areaId.style.background = 'pink';
+            areaId.style.color = "black";
+            areaId.innerText = 'ENTROU';
+        }
+
+        function clicar(){
+            areaId.style.background = 'black';
+            areaId.style.color = "white";
+            areaId.innerText = 'CLICOU';
+        }
+
+        function sair(){
+            //interagindo com #area
+            areaId.style.background = 'green';
+            areaId.style.color = "white";
+            areaId.innerText = 'SAIU';
+            //interagindo com #areaH1
+            areaH1.style.background = 'white';
+            areaH1.style.color = 'Black';
+            areaH1.innerText = 'DOM';
+        }
+
+        function mover(){
+            areaH1.style.background = 'red';
+            areaH1.style.color = 'white';
+            areaH1.innerText = 'DOOOOOM';
+        }
+  
+    </script>
 </body>
 </html>
