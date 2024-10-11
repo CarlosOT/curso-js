@@ -7,11 +7,25 @@
     <style>
         #res{
             padding: 10px;
+            font-size: 15pt;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+        body{
+            font-family: arial;
+            font-size: 20pt;
+        }
+        input{
+            font-family: arial;
+            font-size: 18pt;
+            border-radius: 10px;
+            width: 100px;
         }
     </style>
 </head>
 <body>
     <h1>Somando Valores</h1>
+    <p>Neste exemplo estamos fazendo uma operação de soma:</p>
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="Somar" onclick="somar()">
@@ -27,7 +41,9 @@
 
             var res = window.document.getElementById('res');
             var s = n1 + n2;
-            res.innerHTML = s;
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`;
+            res.style.color = 'blue';
+            res.style.fontWeight = 400;
         }
     </script>
     
