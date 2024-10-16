@@ -18,6 +18,10 @@ section{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.596);
 }
 
+img{
+    width: 200px;
+}
+
 div{
     text-align: center;
     padding: 10px;
