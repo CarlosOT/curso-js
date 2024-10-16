@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(107, 107, 241);
+    font: normal 15pt arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.596);
+}
+
+#conjuntoBotoes{
+    display: flex;
+    margin-top: -20px;
+}
+
+#botao1{
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#botao2{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#res{
+    background-color: white;
+    padding: 10px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 15px;
+
+}
