@@ -12,7 +12,7 @@ header{
 img{
     width: 200px;
     padding: 50px 50px 0px 50px;
-    margin-bottom: -20px;
+    margin-bottom: 10px;
 }
 
 section{
@@ -44,7 +44,7 @@ section{
 
 #res{
     background-color: white;
-    padding: 20px 50px 50px 50px;   
+    padding: 20px 50px 20px 50px;   
 }
 
 footer{

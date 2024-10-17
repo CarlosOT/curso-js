@@ -64,7 +64,7 @@ function verificar(){
         genero = 'não definido';
         res.style.textAlign = 'center';
         res.style.background = "#6b6bf124";
-        res.innerHTML = `Pessoa com gênero ${genero} com ${idade} anos`;
+        res.innerHTML = `Gênero ${genero} com ${idade} anos`;
     }
 }
 
