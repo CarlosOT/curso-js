@@ -1,5 +1,4 @@
 /*SELETORES POR TAG*/
-
 body{
     background-color: rgb(107, 107, 241);
     font: normal 15pt arial;
@@ -28,7 +27,6 @@ footer{
 }
 
 /*SELETORES POR ID*/
-
 #txtn{
     padding: 5px;
     border-top: solid 1px;
@@ -49,4 +47,12 @@ footer{
     color: blue;
     font-weight: 700;
     background-color: white;
+}
+
+#botaoLimpar{
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+    border-color: black;
+    font-weight: 700;
+    color: blue;
 }
