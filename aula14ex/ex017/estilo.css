@@ -1,3 +1,5 @@
+/*SELETORES POR TAG*/
+
 body{
     background-color: rgb(107, 107, 241);
     font: normal 15pt arial;
@@ -23,4 +25,28 @@ footer{
     text-align: center;
     font-style: italic;
 
+}
+
+/*SELETORES POR ID*/
+
+#txtn{
+    padding: 5px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-left: solid 1px;
+    border-right: 0px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#botao{
+    padding: 5px;
+    border-radius: 0px 5px 5px 0px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-color: black;
+    color: blue;
+    font-weight: 700;
+    background-color: white;
 }
