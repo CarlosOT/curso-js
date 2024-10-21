@@ -6,3 +6,6 @@ console.log("")
 for(let pos in valores){
     console.log(`O valor ${valores[pos]} está na posição ${valores.indexOf(valores[pos])}`);
 }
+
+console.log("")
+console.log(`Este array tem ${valores.length} posições`)
