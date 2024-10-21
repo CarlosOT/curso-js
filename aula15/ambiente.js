@@ -1,5 +1,4 @@
 let num = [5,8,2,9,3];
-let c = 0;
 
 console.log(`Elementos do vetor antes do método sort(): ${num}`);
 
@@ -18,6 +17,6 @@ console.log(`Tamanho do vetor: ${num.length}`);
 
 //mostrando elementos dentro do vetor usando for
 console.log('')
-for(c; c < (num.length); c++){
-    console.log(`Posição do índice [${c}]: ${num[c]}`);
+for(let posicao = 0; posicao < (num.length); posicao++){
+    console.log(`Posição do índice [${posicao}]: ${num[posicao]}`);
 }
