@@ -1,4 +1,4 @@
-let amigo = {
+    let amigo = {
     nome:'josé', 
     sexo: 'M', 
     peso: 85.4, 
